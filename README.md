@@ -1,11 +1,11 @@
 # Shopify-Starter
-A small guide to startup your Shopify dev environment.
+A concise guide to start up your Shopify development environment.
 
 ## Getting Started
 
-Shopify has many tools to work with its environment. In this guide we will talk about the most common tools used in the process of development a Shopify theme and how to install it, each tool will help you to improve your developtment experience. Also we will talk about a project setup. 
+Shopify offers numerous tools to work within its environment. In this guide, we will discuss the most commonly used tools in the process of developing a Shopify theme and how to install them. Each tool will enhance your development experience. Additionally, we will cover project setup.
 
-> Note: This guide is base on the official `Shopify` dev docs, if you have any question that cannot be solve here, we recommend you to see the [oficial documentation here](https://shopify.dev/docs/themes/tools).
+> Note: This guide is based on the official Shopify developer documentation. If you have any questions that cannot be resolved here, we recommend checking the [oficial documentation here](https://shopify.dev/docs/themes/tools).
 
 ## Shopify CLI
 
@@ -61,12 +61,12 @@ The command [`theme init`](https://shopify.dev/docs/themes/tools/cli/commands#in
 shopify theme init [name]
 ```
 
-Where the `[name]` parameter is the name of your new theme. By default this command create a copy of [`Dawn`](https://github.com/Shopify/dawn) Shopify's example theme (if no Git repository is defined), with the specified name in the current folder.
+Where the `[name]` parameter is the name of your new theme. By default, this command creates a copy of [`Dawn`](https://github.com/Shopify/dawn), Shopify's example theme (if no Git repository is defined), with the specified name in the current folder.
 
 #### Preview themes with `theme dev` command
-After the creation of your new theme, maybe you want to test and preview the current state of your project. We can do that by using [`theme dev`](https://shopify.dev/docs/themes/tools/cli/commands#dev).
+After creating your new theme, you may want to test and preview the current state of your project. This can be done by using [`theme dev`](https://shopify.dev/docs/themes/tools/cli/commands#dev).
 
-Before to test the theme you must need a shopify account and shop. After you create your shopify account and shop, you must need to login in your shopify account through the Shopify CLI, using the following command:
+Before testing the theme, you must have a Shopify account and shop. After creating your Shopify account and shop, you need to log in to your Shopify account through the Shopify CLI using the following command:
 
 ```bash
 shopify login
@@ -80,29 +80,30 @@ shopify theme dev -s "[store-name].myshopify.com"
 
 Where the `[shopify-name]` parameter is the slug name of your shop. Finally you can your shopify preview by addressing to [http://127.0.0.1:9292](http://127.0.0.1:9292) in your browser.
 
-Congrats! You installed and tested your shopify theme locally. (You must have something similar to this image after finish this last step).
+Congrats! Your theme was installed successfully (You should see something similar to this image after completing this last step.)
 
 ![Theme preview](/imgs/preview.png)
 
 
 ## Deployment
 
-One of the most important thing that you must to do is to deploy your theme in your shop using the github Shopify integration. The integrantion will help you with the pull & push of your theme changes. Each time you push a commit in your attached branch, the integration will automatically deploy this change to your remote shop theme. It means your shop theme is sync with your github repository theme.
+One of the most important things you must do is deploy your theme in your shop using the GitHub Shopify integration. This integration will assist you with the pull and push of your theme changes. Each time you push a commit to your linked branch, the integration will automatically deploy this change to your remote shop theme. This ensures that your shop theme stays in sync with your GitHub repository theme.
 
-To sync a shop theme with a repository, you only need to add a new theme in your shop, and click `connect from Github` option.
+To synchronize a shop theme with a repository, you only need to add a new theme in your shop and click the `Connect from GitHub` option.
 
 ![Connect from Github](/imgs/connect-from-github.png)
 
-Then add a new github account, in case that you have not the shopify integration in your github, in this process the integration will automatically installed.
+Next, add a new GitHub account in case you do not have the Shopify integration set up on your GitHub. During this process, the integration will be automatically installed.
 
 ![Add github account](/imgs/add-account.png)
 
-> Note: In some situatios after add a new account, maybe you will notice your account have not been added. You must retry the previous steps, in case it does not work, try to clear the cache and reload the page.
+> Note: In some situations, after adding a new account, you may notice that your account has not been added. You must retry the previous steps. In case it does not work, try clearing the cache and reloading the page.
 
 Finally add your respective theme repository.
 
 ![Add github repository](/imgs/add-repository.png)
 
-Congrats! Your theme was deployed successfully. (You must have something similar to this image after finish this last step)
+
+Congratulations! Your theme was deployed successfully. (You should see something similar to this image after completing this last step.)
 
 ![Add github repository](/imgs/theme-connected.png)
