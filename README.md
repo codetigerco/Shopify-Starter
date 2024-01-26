@@ -83,3 +83,26 @@ Where the `[shopify-name]` parameter is the slug name of your shop. Finally you 
 Congrats! You installed and tested your shopify theme locally. (You must have something similar to this image after finish this last step).
 
 ![Theme preview](/imgs/preview.png)
+
+
+## Deployment
+
+One of the most important thing that you must to do is to deploy your theme in your shop using the github Shopify integration. The integrantion will help you with the pull & push of your theme changes. Each time you push a commit in your attached branch, the integration will automatically deploy this change to your remote shop theme. It means your shop theme is sync with your github repository theme.
+
+To sync a shop theme with a repository, you only need to add a new theme in your shop, and click `connect from Github` option.
+
+![Connect from Github](/imgs/connect-from-github.png)
+
+Then add a new github account, in case that you have not the shopify integration in your github, in this process the integration will automatically installed.
+
+![Add github account](/imgs/add-account.png)
+
+> Note: In some situatios after add a new account, maybe you will notice your account have not been added. You must retry the previous steps, in case it does not work, try to clear the cache and reload the page.
+
+Finally add your respective theme repository.
+
+![Add github repository](/imgs/add-repository.png)
+
+Congrats! Your theme was deployed successfully. (You must have something similar to this image after finish this last step)
+
+![Add github repository](/imgs/theme-connected.png)
